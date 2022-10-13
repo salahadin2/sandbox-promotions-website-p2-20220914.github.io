@@ -1,72 +1,113 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <!-- Used by the Keyboard -->
-        <meta charset="utf-8">
+<html lang="en">
 
-        <title>various page, Learning HTML</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
 
-        <meta name="author" content="salahadin">
-        <meta name="description"  content="using html to build up the basic structure of a webpage">
-        <meta name="keywords" content="boilerplate starter code HTML learning">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--content give value for name or http-equiv attribute, text entry in string or array string -->
+<body>
+    <h1>My Goals for the Year</h1>
 
-        <!-- meta http-equiv="default-style" content=""--> <!-- content matches css link exactly-->
+    <hr>
 
-        <!-- Other meta attributes to be aware of -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#html">Learning HTML</a>
+            </li>
+            <li>
+                <a href="#vacation">Planning a Vacation</a>
+            </li>
+        </ul>
+    </nav>
 
-        <!-- meta http-equiv="refresh" content="30"-->
-        <!-- Content forces a Internet Request to refresh webpage every "time value in seconds" -->
-        <!-- Use this when refreshes are needed -->
+    <hr>
 
-        <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
-        <!-- Already specified in the charset above-->
+    <section id="html">
+        <h2>I'm Ready to Learn HTML</h2>
+        <p>This is my first web page.</p>
+        <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+        <figure>
+            <figcaption>An Example of HTML5 code</figcaption>
+            <p>
+                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+        </figure>
+        <h3>My Daily Schedule</h3>
+        <p>Let me tell you how:</p>
+        <ol>
+            <li>...I learn more about web dev.</li>
+            <li>...I plan out my schedule.</li>
+            <li>...I use resources from <abbr title="Mozilla Developer Network">
+                    <a href="https://developer.mozilla.org/">MDN</a>
+                </abbr>.</li>
+        </ol>
+    </section>
 
+    <hr>
 
+    <section id="vacation">
+        <h2>I Am Also Planning a Vacation</h2>
+        <p>I've been working hard and <em>really need a getaway</em>.</p>
+        <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
 
-    </head>
-    
-    <body>
-        <header><h1 style="font-size:5.5vw">Learning HTML and css</h1></header>
-        <nav>
-            <header style="font-size:3vw">Navigation</header>
-            <section>
-                <header style="font-size:2vw">Various Pages</header>
-                <ul style="list-style-type:square; font-size:0.75vw">
-                    <li> <childTemplate class="html"></childTemplate>: <a href="childPages/childtemplate.html" target="_blank"></a>
-                <li> <img src="thumb-1.png" alt=" salah thumbpng enjpoy life">
-                    <li> Template Exemplar: <a href="childPages/childTemplate.html" target="_blank">click here</a>
-                    <li> images: <a href="sandbox-promotions-website-p2-20220914.github.io/images"></a>
-                
-                    <li> What this index page might look like with Flexbox: <a href="childPages/Flexbox.html" target="_blank">click here</a>
-                </ul>
-            </section>
-        </nav>
-        <hr>
-        <aside> aside is for extra information</aside>
-    </hr>
-        <main></main>
-        <section></section>
-        <article></article>
-        <footer></footer>
-    </body>
+        <h3>Places I'd Like to Visit</h3>
+        <ul>
+            <li>
+                <p>I've heard good things about the Caribbean.</p>
+                <figure>
+                    <img src="img/caribbean.jpg" alt="Caribbean Beach" title="I want to visit a Caribbean beach."
+                        width="400" height="225" loading="lazy">
+                    <figcaption>
+                        Caribbean Beach Getaway
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <p>I've heard good things about going here:</p>
+                <address>
+                    Margaritaville Island Reserve Riviera Cancún<br>
+                    Bahia Petempich Puerto Morelos, Mexico<br>
+                    Colonia Morelos, México 77580
+                </address>
+                <figure>
+                    <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'Clock Somewhere!" width="400"
+                        height="267" loading="lazy">
+                    <figcaption>
+                        A Caribbean Vacation Image
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+        <!-- TODO: Add more places -->
+        <h3>Places I Want to Avoid</h3>
+        <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong>!</dd>
 
-    <footer>
-        <blockquote cite="https://www.brainyquote.com/quotes/Edgster_Dijikstra_163583">
-            <!-- Date Accessed 20220919 -->
-        </blockquote>
-        <p>
-            <strong>
-                "Getting information off the Internet is like taking a drink from a firehose."
-            </strong>
-            <em>- <a href="https://www.brainyquote.com/quotes/Edgster-Dijikstra_163583 " target="_blank"></a>
-                Mitch Kapor</a>
-            </em>
-        </p>
-        <p>&copy salahadin, powered by salahadin2 in GitHub</p>
-    </footer>
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+        </dl>
+    </section>
+
+    <hr>
+    &lt;&lt;&lt; &copy; <a href="about.html">Dave Gray</a> &gt;&gt;&gt;
+    <p>
+        <a href="#">Back to Top</a>
+    </p>
+</body>
+
 </html>
+
+
 
 
 
